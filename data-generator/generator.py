@@ -1,3 +1,4 @@
+#install libraries for generating realistic data
 import json
 import time
 import uuid
@@ -148,7 +149,7 @@ if __name__ == "__main__":
             print(f"Waiting for Kafka to be ready... ({retries}/{max_retries})")
             retries += 1
             time.sleep(5)
-    
+    # you have to run kafka
     if not connected:
         print("Failed to connect to Kafka after several attempts. Exiting.")
         exit(1)
